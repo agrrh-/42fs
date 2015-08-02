@@ -11,13 +11,12 @@ Then create some source:
 
     $ mkdir /tmp/src /tmp/dst
     $ echo "Hello, world!" > /tmp/src/file
-    $ mkdir /tmp/src/dir
 
 And then just mount and use:
 
     $ ./42fs /tmp/src /tmp/dst
     $ ls /tmp/dst
-    dir  file
+    file
     $ cat /tmp/src/file
     Hello, world!
     $ cat /tmp/dst/file
