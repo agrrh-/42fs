@@ -26,3 +26,7 @@ And then just mount and use:
 That's it.
 
 The Ultimate Filesystem of Life, the Universe, and Everything.
+
+# Thanks
+
+The main author is [Stavros Korokithakis](http://www.stavros.io/posts/python-fuse-filesystem/), I just applied minor modification to work it as a joke.
