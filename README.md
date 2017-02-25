@@ -5,22 +5,23 @@
 
 Don't forget to install `fusepy`:
 
-    # pip3 install fusepy
+```bash
+pip install fusepy
+```
 
 Then create some source:
 
-    $ mkdir /tmp/src /tmp/dst
-    $ echo "Hello, world!" > /tmp/src/file
+```bash
+mkdir /tmp/src /tmp/dst
+echo "Hello, world!" > /tmp/src/file
+```
 
 And then just mount and use:
 
-    $ ./42fs /tmp/src /tmp/dst
-    $ ls /tmp/dst
-    file
-    $ cat /tmp/src/file
-    Hello, world!
-    $ cat /tmp/dst/file
-    42
+```bash
+./42fs /tmp/src /tmp/dst
+diff /tmp/{src,dst}/file
+```
 
 That's it.
 
